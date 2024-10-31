@@ -1,4 +1,5 @@
 
+import LolBorder from './components/LolBorder';
 import './App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      
+      <LolBorder />
     </>
   )
 }

@@ -1,0 +1,9 @@
+
+.border {
+    display: flex;
+    margin: auto;    
+    border: 10px solid var(--main-color);
+    border-radius: 5px; 
+    min-width: 500px;
+    min-height: 75vh;
+}
