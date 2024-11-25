@@ -1,6 +1,7 @@
 
 .border {
     display: flex;
+    flex-direction: column;
     margin: auto;    
     border: 10px solid var(--main-color);
     border-radius: 5px; 
