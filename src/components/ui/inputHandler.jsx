@@ -1,9 +1,8 @@
-import react, {useState} from 'react';
+import React from 'react';
 import './InputHandler.css';
 
 const InputHandler = () => {
-
-    const [champsUri, setChampsUri] = useState([]);
+    
 
     return (
         <div className='input-handler'>
