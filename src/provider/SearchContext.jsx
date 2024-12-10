@@ -15,7 +15,7 @@ export const SearchProvider = ({ children }) => {
 
     const fetchChamps = async () => {
        try {
-        const response = await axios.get('https://localhost:3000/api-names');
+        const response = await axios.get('http://localhost:3000/api-names');
         const newChampList =  response.data;
 
         if (newChampList.length === 0) {
