@@ -32,7 +32,7 @@ export const SearchProvider = ({ children }) => {
         if ( prevChampList.length > 0) {
             setChampList(prevChampList);
             setStatus('yellow');
-        } else {
+        } else if (prevChampList.length < 0) {
             setStatus('red');
         }
        }
