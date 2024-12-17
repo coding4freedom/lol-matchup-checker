@@ -8,11 +8,11 @@ const Banner = () => {
 
     const getStatusColor = () => {
         switch (status) {
-            case 'green':
+            case 'G':
                 return 'lightgreen';
-            case 'yellow':
+            case 'Y':
                 return 'gold';
-            case 'red':
+            case 'R':
                 return 'lightcoral';
             default:
                 return 'gray';

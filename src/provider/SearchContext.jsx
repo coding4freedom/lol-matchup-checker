@@ -10,7 +10,7 @@ export const useSearch = () => {
 
 export const SearchProvider = ({ children }) => {
     const [champList, setChampList] = useState([]);
-    const [status, setStatus] = useState('red');
+    const [status, setStatus] = useState('R'); // R = Red (error), G = Green (success), Y = Yellow (warning)
     const [prevChampList, setPrevChampList] = useState([]);
 
     const fetchChamps = async () => {
@@ -24,16 +24,16 @@ export const SearchProvider = ({ children }) => {
 
         setChampList(newChampList);
         setPrevChampList(newChampList);
-        setStatus('green');
+        setStatus('G');
 
        } catch (error) {
         console.log('Error fetching champ list', error);
 
         if ( prevChampList.length > 0) {
             setChampList(prevChampList);
-            setStatus('yellow');
+            setStatus('Y');
         } else if (prevChampList.length < 0) {
-            setStatus('red');
+            setStatus('R');
         }
        }
     }
